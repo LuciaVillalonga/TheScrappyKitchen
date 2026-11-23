@@ -380,6 +380,21 @@ recipes.push({
   "categories": ["Bread", "Eggs"]
 });
 
+recipes.push({
+  "id": 22, "name": "Buttermilk pancakes", "main": "Flour", "tags": "eggs milk flour vegetarian",
+  "time": 20, "serves": 2, "image": "16-buttermilk-pancakes.jpg",
+  "ingredients": ["150 g plain flour","1 tbsp sugar","1 tsp baking powder","½ tsp bicarbonate of soda","1 pinch salt","1 egg","200 ml milk mixed with 1 tbsp lemon juice (or buttermilk)","25 g butter, melted, plus a little for the pan","maple syrup, to serve"],
+  "steps": [
+    "If you do not have buttermilk, stir the lemon juice into the milk and leave it for 5 minutes until it thickens slightly.",
+    "Mix the flour, sugar, baking powder, bicarbonate of soda and salt in a large bowl.",
+    "Whisk the egg and the milk mixture together with the melted butter, then pour into the dry ingredients and stir until just combined. A few lumps are fine, so avoid overmixing.",
+    "Heat a nonstick pan over medium heat with a little butter. Spoon in the batter to make pancakes about 10 cm wide and cook for 2 minutes, until bubbles appear on the surface.",
+    "Flip and cook for another 1-2 minutes, until golden. Keep warm and repeat with the remaining batter.",
+    "Stack them up and serve with a knob of butter and maple syrup."
+  ],
+  "categories": ["Baking", "Eggs"]
+});
+
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 /* Recipes you create yourself are kept in this browser */
 try{JSON.parse(localStorage.getItem('scrappy-custom')||'[]').forEach(r=>{if(r&&r.id&&r.name&&Array.isArray(r.ingredients)&&Array.isArray(r.steps)){r.custom=true;r.categories=[];r.tags=r.tags||'';recipes.push(r)}})}catch{}
@@ -675,7 +690,7 @@ function reset(){selected.clear();$('#sort').value='default';F.diet='any';F.time
 
 
 /* ===== Nutrition per serving (my rough estimates: kcal, protein g, carbs g, fat g). Check them against your own numbers. ===== */
-const NUTRITION={21:[690,30,70,29],13:[520,34,62,13],3:[320,21,4,24],14:[480,32,36,22],15:[640,36,78,18],6:[340,11,56,8],7:[310,11,36,14],19:[430,31,30,20],9:[520,17,62,22],10:[290,17,14,19],11:[480,30,62,10],12:[450,17,40,24],18:[380,4,58,15],20:[300,3,38,15],16:[380,15,40,17]};
+const NUTRITION={21:[690,30,70,29],13:[520,34,62,13],3:[320,21,4,24],14:[480,32,36,22],15:[640,36,78,18],6:[340,11,56,8],7:[310,11,36,14],19:[430,31,30,20],9:[520,17,62,22],10:[290,17,14,19],11:[480,30,62,10],12:[450,17,40,24],18:[380,4,58,15],20:[300,3,38,15],16:[380,15,40,17],22:[470,14,66,16]};
 
 /* ===== Swap tips: "no X? use Y" for the recipes ===== */
 const SWAPS={
@@ -693,6 +708,7 @@ const SWAPS={
   12:["No pesto? Blend basil with olive oil, or spread on a little tomato paste.","No mozzarella? Cheddar or any melting cheese.","No fresh tomato? Sun-dried tomatoes or a spoon of tomato paste."],
   18:["No oats? Extra flour, or crushed biscuits or cornflakes.","No apples? Pears, plums or frozen berries.","No cinnamon? Mixed spice or a little vanilla.","Vegan? Use plant butter or coconut oil."],
   20:["No chocolate chips? Chop up a chocolate bar.","No bicarbonate of soda? About 1 tsp baking powder works.","No brown sugar? All caster sugar works, the cookies just get a little less chewy."],
+  22:["No buttermilk? Milk plus a spoonful of lemon juice or vinegar works the same way.","No bicarbonate of soda? Use 2 tsp baking powder in total.","No butter? Any neutral oil works for the pan and the batter.","Lumpy batter is fine: overmixing makes pancakes tough.","Top with sliced banana, berries or jam instead of maple syrup."],
   16:["No milk? Any plant milk or a splash of water.","No maple syrup? Honey, jam or sliced banana.","Stale bread works best because it soaks up the egg without falling apart.","No cinnamon? A little vanilla, or leave it out."]
 };
 
