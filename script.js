@@ -539,7 +539,7 @@ let selected=new Set(),view='all',current=null,toastTimer,opener=null;
 function persist(){try{localStorage.setItem('scrappy-saved',JSON.stringify(saved));localStorage.setItem('scrappy-ratings',JSON.stringify(ratings))}catch{persistent=false}}
 function toast(message){$('#toast').textContent=message;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').textContent='',2800)}
 const PLACEHOLDER='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#f6c45e"/><text x="50" y="64" font-size="44" text-anchor="middle">🍽️</text></svg>');
-function photo(r,lazy=true){return `<img src="${r.photo||(r.image?'assets/'+r.image:PLACEHOLDER)}" alt="${esc(r.name)}" ${lazy?'loading="lazy"':''} width="600" height="600" onerror="this.onerror=null;this.src=PLACEHOLDER">`}
+function photo(r,lazy=true){return `<img src="${r.photo||(r.image?r.image:PLACEHOLDER)}" alt="${esc(r.name)}" ${lazy?'loading="lazy"':''} width="600" height="600" onerror="this.onerror=null;this.src=PLACEHOLDER">`}
 
 /* ===== Build the fridge ===== */
 const ingButton=i=>`<button class="ing" type="button" data-ingredient="${i.key}" aria-pressed="false" style="left:${i.x}%;top:${i.y}%${i.w?`;width:${i.w}%;height:${i.h}%`:''}"><svg viewBox="0 0 100 100" aria-hidden="true">${i.svg}</svg><span class="ing-name">${i.label}</span>${i.sub?`<span class="ing-sub">${i.sub}</span>`:''}</button>`;
