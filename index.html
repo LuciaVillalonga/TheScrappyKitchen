@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Scrappy Kitchen</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@800&family=Caveat+Brush&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<a class="skip" href="#fridge">Skip to the fridge</a>
+
+<header class="topbar">
+  <nav aria-label="Main navigation">
+    <button type="button" data-go="fridge">Fridge</button>
+    <button type="button" data-go="filters">Diet &amp; time</button>
+    <button type="button" id="allTab" class="active" aria-pressed="true">Recipes</button>
+    <button type="button" id="savedTab" aria-pressed="false">♡ Saved <span id="savedCount">0</span></button>
+    <button type="button" id="shopTab">Shopping list <span id="shopCount">0</span></button>
+    <span class="themes" role="group" aria-label="Background colour"><button type="button" class="sw" data-bg="pink" title="Pink opal" aria-label="Pink opal background" aria-pressed="true"></button><button type="button" class="sw" data-bg="blue" title="Baby blue" aria-label="Baby blue background" aria-pressed="false"></button><button type="button" class="sw" data-bg="cream" title="Cream" aria-label="Cream background" aria-pressed="false"></button></span>
+  </nav>
+</header>
+
+<main id="homeView">
+  <!-- HERO: big centred title -->
+  <section class="hero" id="top">
+    <div class="title-wrap">
+      <h1 class="title">The Scrappy Kitchen</h1>
+      <img class="cutlery" src="assets/cutlery-icon.png" alt="Fork and knife icon" width="600" height="600">
+    </div>
+    <div class="sticky s1" aria-hidden="true"><span class="tape"></span>no money?<br>no problem! ♡</div>
+    <div class="sticky s2" aria-hidden="true"><span class="tape"></span>today’s mood:<br>lazy but hungry</div>
+    <p class="tagline">Simple, tasty meals using what you’ve already got!</p>
+    <a class="cue" href="#fridge">Scroll to open the fridge <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <!-- FOOTSTEPS leading to the fridge -->
+  <div class="trail" aria-hidden="true"><span class="fp l" style="left:51.13%;top:3.33%;--a:127deg;--i:0"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:56.84%;top:4.11%;--a:129deg;--i:1"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:58.50%;top:10.22%;--a:139deg;--i:2"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:63.70%;top:13.31%;--a:165deg;--i:3"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:60.65%;top:18.59%;--a:-158deg;--i:4"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:59.83%;top:24.74%;--a:-133deg;--i:5"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:54.11%;top:25.47%;--a:-124deg;--i:6"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:51.43%;top:31.20%;--a:-120deg;--i:7"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:45.74%;top:30.99%;--a:-118deg;--i:8"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:42.81%;top:36.57%;--a:-119deg;--i:9"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:37.11%;top:36.43%;--a:-121deg;--i:10"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:34.56%;top:42.22%;--a:-126deg;--i:11"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:28.85%;top:43.37%;--a:-139deg;--i:12"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:28.87%;top:49.52%;--a:-170deg;--i:13"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:27.12%;top:55.36%;--a:153deg;--i:14"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:32.61%;top:57.67%;--a:134deg;--i:15"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:34.52%;top:63.76%;--a:128deg;--i:16"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:40.21%;top:64.47%;--a:127deg;--i:17"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:42.24%;top:70.51%;--a:131deg;--i:18"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:47.85%;top:72.25%;--a:145deg;--i:19"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:47.22%;top:78.34%;--a:177deg;--i:20"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:48.32%;top:84.38%;--a:-147deg;--i:21"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:42.68%;top:86.08%;--a:-129deg;--i:22"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:40.29%;top:91.94%;--a:-122deg;--i:23"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp l" style="left:34.58%;top:91.89%;--a:-119deg;--i:24"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span><span class="fp" style="left:31.68%;top:97.47%;--a:-118deg;--i:25"><svg viewBox="0 0 30 72" aria-hidden="true"><path d="M15 1C24 1 29 10 28 22C27 31 22 36 21 44H9C8 36 3 31 2 22C1 10 6 1 15 1Z"/><path d="M9 49H21C22 58 21 67 15 70C9 67 8 58 9 49Z"/></svg></span></div>
+
+  <!-- FRIDGE FINDER -->
+  <section class="finder" id="fridge" aria-label="Choose the ingredients you have">
+    <div class="fridge-scene" id="fridgeScene" role="group" aria-label="Open fridge. Choose the ingredients you have.">
+      <div class="fridge-art">
+        <svg class="fridge-svg" viewBox="0 0 1000 860" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="lampGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6c0" stop-opacity=".9"/><stop offset=".6" stop-color="#fff6c0" stop-opacity=".25"/><stop offset="1" stop-color="#fff6c0" stop-opacity="0"/></linearGradient></defs>
+          <ellipse cx="330" cy="838" rx="340" ry="14" fill="#14284b" opacity=".13"/>
+          <g stroke="#14284b" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+            <!-- cabinet -->
+            <rect x="20" y="40" width="580" height="780" rx="34" fill="#dce5ee"/>
+            <path d="M20 74a34 34 0 0 1 34-34h512a34 34 0 0 1 34 34v66H20z" fill="#f4f8fc"/>
+            <rect x="92" y="140" width="500" height="660" fill="#cdd8e3"/>
+            <path d="M556 144h32v652h-32z" fill="#bccadb" stroke="none"/>
+            <!-- three glass shelves -->
+            <g id="shelfLines">
+              <rect x="92" y="293" width="500" height="12" fill="#eaf3fb" stroke-width="5"/><rect x="92" y="305" width="500" height="16" fill="#fff"/><path d="M150 299h90M260 299h40" stroke="#fff" stroke-width="4"/>
+              <rect x="92" y="468" width="500" height="12" fill="#eaf3fb" stroke-width="5"/><rect x="92" y="480" width="500" height="16" fill="#fff"/><path d="M150 474h90M260 474h40" stroke="#fff" stroke-width="4"/>
+              <rect x="92" y="643" width="500" height="12" fill="#eaf3fb" stroke-width="5"/><rect x="92" y="655" width="500" height="16" fill="#fff"/><path d="M150 649h90M260 649h40" stroke="#fff" stroke-width="4"/>
+            </g>
+            <!-- two drawers -->
+            <rect x="104" y="690" width="226" height="98" rx="8" fill="#f1f7fc"/><path d="M130 712h70M130 726h30" stroke="#fff" stroke-width="5"/>
+            <rect x="344" y="690" width="236" height="98" rx="8" fill="#f1f7fc"/><path d="M370 712h70M370 726h30" stroke="#fff" stroke-width="5"/>
+            <!-- fridge light -->
+            <g class="lamp" stroke="none">
+              <polygon class="lamp-cone" points="290,158 394,158 592,560 92,560" fill="url(#lampGrad)"/>
+              <rect x="278" y="146" width="128" height="14" rx="7" fill="#c9d4e0"/>
+              <rect class="lamp-on" x="278" y="146" width="128" height="14" rx="7" fill="#fffbd6"/>
+            </g>
+            <!-- open door -->
+            <g class="door">
+              <polygon points="628,72 906,126 906,818 628,790" fill="#d3dde8"/>
+              <polygon points="906,126 940,134 940,812 906,818" fill="#fff"/>
+              <path d="M940 270h20a14 14 0 0 1 14 14v120a14 14 0 0 1-14 14h-20" fill="none"/>
+              <g fill="#fff">
+                <polygon points="652,235 890,281 890,311 652,265" fill="#f4f8fc"/><polygon points="652,265 890,311 890,359 652,313"/>
+                <polygon points="652,411 890,457 890,487 652,441" fill="#f4f8fc"/><polygon points="652,441 890,487 890,535 652,489"/>
+                <polygon points="652,585 890,631 890,661 652,615" fill="#f4f8fc"/><polygon points="652,615 890,661 890,709 652,663"/>
+                <polygon points="652,676 890,722 890,752 652,706" fill="#f4f8fc"/><polygon points="652,706 890,752 890,790 652,744"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <div class="fridge-items" id="fridgeItems"></div>
+      </div>
+    </div>
+    <div class="fridge-foot">
+      <p id="fridgeHint" class="hint" role="status" aria-live="polite"></p>
+      <label class="check" for="closest"><input type="checkbox" id="closest"> Also show recipes that use only some of my picks</label>
+      <div class="foot-buttons"><button class="find" id="seeRecipes" type="button">Show me recipes ↓</button><button class="find pale" id="reset" type="button">Clear all</button></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how" aria-labelledby="howTitle">
+    <h2 id="howTitle">How it works</h2>
+    <ol class="steps">
+      <li class="reveal"><span class="step-num" aria-hidden="true">1</span><h3>Open the fridge</h3><p>Tap everything you’ve got at home. Pick as many ingredients as you like.</p></li>
+      <li class="reveal"><span class="step-num" aria-hidden="true">2</span><h3>Narrow it down</h3><p>Set your diet and how long you have to cook.</p></li>
+      <li class="reveal"><span class="step-num" aria-hidden="true">3</span><h3>Cook and save</h3><p>Tick ingredients off as you go, follow the simple steps, then rate and save your favourites.</p></li>
+    </ol>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" aria-labelledby="resultsTitle">
+    <div class="filters-row" id="filters">
+      <div class="diet" id="dietBar" role="group" aria-label="Diet">
+        <span class="eyebrow">Diet</span>
+        <div class="diet-row"><button type="button" class="pill big" data-diet="any" aria-pressed="true">Any</button></div>
+        <div class="diet-row"><button type="button" class="pill big" data-diet="vegetarian" aria-pressed="false">Vegetarian</button><button type="button" class="pill big" data-diet="vegan" aria-pressed="false">Vegan</button></div>
+        <div class="diet-row"><button type="button" class="pill big" data-diet="highprotein" aria-pressed="false">High protein</button><button type="button" class="pill big" data-diet="lowcal" aria-pressed="false">Low calorie</button></div>
+      </div>
+      <div class="time-col">
+        <span class="eyebrow">Time</span>
+        <div class="tp-dial" id="tpDial">
+        <svg viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+          <circle cx="150" cy="150" r="146" fill="#b9321a" stroke="#14284b" stroke-width="5"/>
+          <circle cx="150" cy="150" r="128" fill="#fff8f0" stroke="#14284b" stroke-width="3"/>
+          <line x1="70.3" y1="216.8" x2="64.2" y2="222.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="59.9" y1="202.0" x2="53.0" y2="206.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="52.3" y1="185.6" x2="44.8" y2="188.3" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="47.6" y1="168.1" x2="39.7" y2="169.4" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="46.0" y1="150.0" x2="38.0" y2="150.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="47.6" y1="131.9" x2="39.7" y2="130.6" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="52.3" y1="114.4" x2="44.8" y2="111.7" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="59.9" y1="98.0" x2="53.0" y2="94.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="70.3" y1="83.2" x2="64.2" y2="78.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="83.2" y1="70.3" x2="78.0" y2="64.2" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="98.0" y1="59.9" x2="94.0" y2="53.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="114.4" y1="52.3" x2="111.7" y2="44.8" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="131.9" y1="47.6" x2="130.6" y2="39.7" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="150.0" y1="46.0" x2="150.0" y2="38.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="168.1" y1="47.6" x2="169.4" y2="39.7" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="185.6" y1="52.3" x2="188.3" y2="44.8" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="202.0" y1="59.9" x2="206.0" y2="53.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="216.8" y1="70.3" x2="222.0" y2="64.2" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="229.7" y1="83.2" x2="235.8" y2="78.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="240.1" y1="98.0" x2="247.0" y2="94.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="247.7" y1="114.4" x2="255.2" y2="111.7" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="252.4" y1="131.9" x2="260.3" y2="130.6" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="254.0" y1="150.0" x2="262.0" y2="150.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="252.4" y1="168.1" x2="260.3" y2="169.4" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="247.7" y1="185.6" x2="255.2" y2="188.3" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="240.1" y1="202.0" x2="247.0" y2="206.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/><line x1="229.7" y1="216.8" x2="235.8" y2="222.0" stroke="#14284b" stroke-opacity=".45" stroke-width="2"/>
+          <text x="150" y="228" text-anchor="middle" font-family="Caveat Brush,cursive" font-size="22" fill="#8a2a16">minutes</text>
+          <g class="tp-hand" id="tpHand"><path d="M150 150L142 150L150 58L158 150Z" fill="#b9321a" stroke="#14284b" stroke-width="3" stroke-linejoin="round"/></g>
+          <circle cx="150" cy="150" r="14" fill="#f6c45e" stroke="#14284b" stroke-width="4"/>
+          <ellipse cx="108" cy="52" rx="34" ry="12" transform="rotate(-30 108 52)" fill="#fff" opacity=".25"/>
+        </svg>
+        <button type="button" class="tp-stop" data-time="any" aria-pressed="false" aria-label="Any time" style="left:29.22%;top:62.00%">∞</button><button type="button" class="tp-stop" data-time="10" aria-pressed="false" aria-label="Up to 10 minutes" style="left:29.22%;top:38.00%">10</button><button type="button" class="tp-stop" data-time="15" aria-pressed="false" aria-label="Up to 15 minutes" style="left:50.00%;top:26.00%">15</button><button type="button" class="tp-stop" data-time="20" aria-pressed="false" aria-label="Up to 20 minutes" style="left:70.78%;top:38.00%">20</button><button type="button" class="tp-stop" data-time="30" aria-pressed="false" aria-label="Up to 30 minutes" style="left:70.78%;top:62.00%">30</button>
+      </div>
+        <p class="sr-only" id="tpRead" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="section-heading"><div><h2 id="resultsTitle">Your next good meal.</h2><p id="resultCount" role="status" aria-live="polite"></p></div><label><span class="eyebrow sort-label">Sort recipes</span><select id="sort"><option value="default">Kitchen favorites</option><option value="time">Quickest first</option><option value="rank">Best ranked</option></select></label></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+    <!-- CREATE MY OWN RECIPE (button to its own page) -->
+  <section class="create-cta" aria-label="Create my own recipe">
+    <button type="button" class="find" id="openCreate">Create my own recipe</button>
+  </section>
+
+  <section class="bottom"><div><div class="eyebrow">Dinner indecision?</div><h2>Let the kitchen choose!</h2></div><button id="surprise" type="button">Surprise me ↗</button></section>
+
+  <footer><span>The Scrappy Kitchen &nbsp; Made for real-life appetites.</span><span>Inspired by <a href="https://www.supercook.com/" target="_blank" rel="noopener">Supercook</a>, <a href="https://www.bbcgoodfood.com/recipes/collection/quick-recipes" target="_blank" rel="noopener">Goodfood</a>, <a href="https://www.mealime.com/" target="_blank" rel="noopener">Mealime</a> &amp; <a href="https://www.budgetbytes.com/category/recipes/" target="_blank" rel="noopener">Budget Bytes</a>.</span></footer>
+</main>
+
+<main id="createView" hidden>
+  <div class="create-top"><button type="button" class="find ghost" id="backHome">← Back to recipes</button></div>
+  <section class="create" id="create" aria-labelledby="createTitle">
+    <div class="create-intro">
+      <p class="eyebrow">Your kitchen, your rules</p>
+      <h1 id="createTitle" class="create-h">Create my own recipe</h1>
+      <p>Add a recipe you already love. It joins the others, shows up when you pick its ingredients, and stays on this device.</p>
+    </div>
+    <form id="createForm" class="create-form">
+      <label for="cName">Recipe name<input id="cName" type="text" maxlength="60" placeholder="Grandma’s garlic noodles" required></label>
+      <div class="row2">
+        <label for="cTime">Time in minutes<input id="cTime" type="number" min="1" max="240" value="20" required></label>
+        <label for="cServes">Servings<input id="cServes" type="number" min="1" max="12" value="2" required></label>
+      </div>
+      <label for="cIngredients">Ingredients, one per line<textarea id="cIngredients" rows="5" placeholder="180 g pasta&#10;2 garlic cloves, chopped&#10;1 tbsp olive oil" required></textarea></label>
+      <label for="cSteps">Steps, one per line<textarea id="cSteps" rows="5" placeholder="Boil the pasta.&#10;Fry the garlic in the oil.&#10;Toss together and serve." required></textarea></label>
+      <fieldset class="goodfor"><legend>Good for</legend>
+        <label class="check" for="dVeg"><input type="checkbox" id="dVeg"> Vegetarian</label>
+        <label class="check" for="dVegan"><input type="checkbox" id="dVegan"> Vegan</label>
+        <label class="check" for="dHp"><input type="checkbox" id="dHp"> High protein</label>
+        <label class="check" for="dLc"><input type="checkbox" id="dLc"> Low calorie</label>
+      </fieldset>
+      <label for="cPhoto">Photo (optional)<input id="cPhoto" type="file" accept="image/*"></label>
+      <button class="find" type="submit">Add to my recipes</button>
+      <p id="createMsg" class="create-msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<dialog id="cookDialog" aria-label="Cook mode">
+  <div class="modal-toolbar"><button class="close" id="closeCook" type="button">✕ Close</button><span class="eyebrow" id="cookCount"></span></div>
+  <div class="cook-body">
+    <div class="cook-name" id="cookName"></div>
+    <p class="cook-step" id="cookStep" aria-live="polite"></p>
+    <div class="cook-timer" id="cookTimer" hidden><strong id="cookClock">00:00</strong><button class="find" id="cookGo" type="button">Start timer</button><button class="clear" id="cookReset" type="button">Reset</button></div>
+    <details class="cook-ings"><summary>Ingredients</summary><ul id="cookIngs"></ul></details>
+  </div>
+  <div class="cook-nav"><button class="find ghost" id="cookPrev" type="button">← Back</button><button class="find" id="cookNext" type="button">Next step →</button></div>
+</dialog>
+
+<dialog id="shopDialog" aria-label="Shopping list">
+  <div class="modal-toolbar"><span class="eyebrow">Shopping list</span><button class="close" id="closeShop" type="button">✕ Close</button></div>
+  <div class="shop-body">
+    <form id="shopForm" class="shop-add-row"><input type="text" id="shopInput" placeholder="Add something…" aria-label="Add an item" maxlength="120" autocomplete="off"><button class="find" type="submit">Add</button></form>
+    <ul id="shopList" class="shop-list"></ul>
+    <textarea id="shopCopyArea" readonly hidden aria-label="Your list, ready to copy" rows="5"></textarea>
+    <div class="shop-actions"><button class="find ghost" id="shopCopy" type="button">Copy list</button><button class="clear" id="shopClearDone" type="button">Clear ticked</button><button class="clear" id="shopClearAll" type="button">Clear all</button></div>
+  </div>
+</dialog>
+
+<dialog id="recipeDialog" aria-label="Recipe"><div class="modal-toolbar"><button class="close" id="closeDialog" type="button">← Back to recipes</button><div class="cat-nav"><span class="eyebrow" id="catCount" aria-live="polite"></span><button type="button" id="prevRecipe" aria-label="Previous recipe">←</button><button type="button" id="nextRecipe" aria-label="Next recipe">→</button></div></div><div id="detail" class="carousel" tabindex="-1"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+
+</body>
+</html>
